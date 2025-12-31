@@ -53,9 +53,9 @@
                 <li><a href="#contact" class="side-nav-link"><i class="fas fa-envelope"></i><span>Contact</span></a>
                 </li>
             </ul>
-       <button class="side-nav-close">
-    Close
-</button>
+            <button class="side-nav-close">
+                Close
+            </button>
 
         </nav>
     </div>
@@ -68,53 +68,48 @@
     <!-- Main Content -->
     <main class="main-content">
         <!-- Hero Section -->
-        <section id="home" class="hero section">
-            <div class="container">
-                <div class="hero-content">
-                    <h4 class="hero-subtitle">Hello, I'm</h4>
-                    <h1 class="hero-title" id="heroTitle">Kartik</h1>
+    <section id="home" class="hero section">
+    <div class="container hero-layout">
 
-                    <div class="typing-container">
-                        <span class="typing-text">I build and learn backend & web technologies</span>
-                    </div>
+        <!-- LEFT : IMAGE SLIDER -->
+        <div class="hero-left">
+            <div class="hero-image-slider">
+                <img src="/img/2.jpeg" class="hero-img active">
+                <img src="img/3.jpeg" class="hero-img">
+                <img src="img/4.jpeg" class="hero-img">
+                <img src="img/8.jpeg" class="hero-img">
+            </div>
+        </div>
 
-                    <div class="dynamic-subtitle">
-                        <span id="changing-text">Java Learner</span>
-                    </div>
+        <!-- RIGHT : INTRO -->
+        <div class="hero-right">
+            <h4 class="hero-subtitle">Hello, I'm</h4>
+            <h1 class="hero-title">Kartik</h1>
 
-                    <p class="hero-description">
-                        Hi, I'm Kartik Kamatkar, an aspiring backend developer with a strong foundation in Java and a
-                        keen interest in Spring Boot, cloud platforms, and system design. I enjoy learning how scalable
-                        systems are built and deployed in real-world environments.
-                    </p>
+            <p class="typing-text">
+                I build and learn backend & web technologies
+            </p>
+<p class="typing-line">
+    <span id="typing-text"></span>
+</p>
 
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>See my work</span>
-                            <div class="btn-hover-effect"></div>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <span>Get in touch</span>
-                            <div class="btn-hover-effect"></div>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Image Gallery -->
-                <div class="hero-image-container">
-    <div class="profile-card">
-        <img src="img/your-photo.jpg" alt="Kartik Kamatkar" class="profile-img">
-        <div class="glow-overlay"></div>
+
+            <p class="hero-description">
+                Hi, I'm Kartik Kamatkar, an aspiring backend developer with a strong
+                foundation in Java and a keen interest in Spring Boot, cloud platforms,
+                and system design.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">See my work</a>
+                <a href="#contact" class="btn btn-secondary">Get in touch</a>
+            </div>
+        </div>
+
     </div>
-</div>
-            </div>
+</section>
 
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-            </div>
-        </section>
 
         <!-- About Section -->
         <section id="about" class="about section">
@@ -153,6 +148,41 @@
                             <span class="stat-label">Learning & Practicing</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- Interactive Image Gallery -->
+        <section id="image-gallery" class="image-gallery section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Journey in Frames</h2>
+                    <p class="section-subtitle">Moments, Work & Me</p>
+                </div>
+
+                <div class="scramble-gallery">
+                    <!-- Normal Images -->
+                    <img src="img/gallery/1.jpg" class="gallery-img">
+                    <img src="img/gallery/2.jpg" class="gallery-img">
+                    <img src="img/gallery/3.jpg" class="gallery-img">
+                    <img src="img/gallery/4.jpg" class="gallery-img">
+                    <img src="img/gallery/5.jpg" class="gallery-img">
+
+                    <!-- YOUR IMAGE -->
+                    <img src="img/your-photo.jpg" class="gallery-img my-image">
+
+                    <img src="img/gallery/6.jpg" class="gallery-img">
+                    <img src="img/gallery/7.jpg" class="gallery-img">
+                    <img src="img/gallery/8.jpg" class="gallery-img">
+                    <img src="img/gallery/9.jpg" class="gallery-img">
+                    <img src="img/gallery/10.jpg" class="gallery-img">
+
+                    <!-- YOUR IMAGE AGAIN -->
+                    <img src="img/your-photo.jpg" class="gallery-img my-image">
+                </div>
+
+                <div class="thank-you">
+                    <h3>Thank You for Visiting ❤️</h3>
+                    <p>This portfolio reflects my learning, effort, and growth journey.</p>
                 </div>
             </div>
         </section>
@@ -521,33 +551,33 @@
                 </div>
             </div>
         </section>
-<!-- Game Section -->
-<section id="game" class="game section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Mini Game</h2>
-            <p class="section-subtitle">Just for fun & practice</p>
-        </div>
+        <!-- Game Section -->
+        <section id="game" class="game section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mini Game</h2>
+                    <p class="section-subtitle">Just for fun & practice</p>
+                </div>
 
-        <div class="game-box">
-            <h3>Reaction Game</h3>
+                <div class="game-box">
+                    <h3>Reaction Game</h3>
 
-            <div class="game-score">
-                Score: <span id="gameScore">0</span>
+                    <div class="game-score">
+                        Score: <span id="gameScore">0</span>
+                    </div>
+
+                    <div class="game-target" id="gameTarget"></div>
+
+                    <div class="game-timer">
+                        Time: <span id="gameTimer">30</span>s
+                    </div>
+
+                    <button class="btn btn-primary" id="gameStart">
+                        Start Game
+                    </button>
+                </div>
             </div>
-
-            <div class="game-target" id="gameTarget"></div>
-
-            <div class="game-timer">
-                Time: <span id="gameTimer">30</span>s
-            </div>
-
-            <button class="btn btn-primary" id="gameStart">
-                Start Game
-            </button>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact section">
