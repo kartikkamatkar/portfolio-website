@@ -1,0 +1,313 @@
+/* Large Desktops */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-gallery {
+        width: 45%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .hero-gallery {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        margin-top: 3rem;
+        transform: none;
+        top: 0;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .skills-grid,
+    .projects-grid,
+    .future-grid,
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .side-menu {
+        left: 1rem;
+    }
+}
+
+/* Small Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .typing-container {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-nav {
+        justify-content: center;
+    }
+    
+    .mini-game {
+        width: calc(100% - 4rem);
+        right: 2rem;
+        left: 2rem;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px) {
+    .hero-image-slider {
+        display: none;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .skills-grid,
+    .projects-grid,
+    .future-grid,
+    .dashboard-stats,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-gallery {
+        height: 300px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .welcome-title {
+        font-size: 3rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .side-menu {
+        display: none;
+    }
+    
+    .game-toggle {
+        bottom: 1rem;
+        right: 1rem;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .mini-game {
+        bottom: 6rem;
+        right: 1rem;
+        left: 1rem;
+        width: calc(100% - 2rem);
+    }
+    
+    .project-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very Small Mobile */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-gallery {
+        height: 250px;
+    }
+    
+    .skill-card,
+    .project-card,
+    .future-card,
+    .stat-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 6rem 0 4rem;
+    }
+    
+    .hero-gallery {
+        height: 250px;
+    }
+    
+    .welcome-text {
+        transform: scale(0.8);
+    }
+}
+
+/* High Resolution Screens */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .entry-animation,
+    .side-menu,
+    .game-toggle,
+    .mini-game,
+    .cursor-dot,
+    .cursor-outline,
+    .scroll-indicator,
+    .footer-social,
+    .social-links,
+    .btn-hover-effect {
+        display: none !important;
+    }
+    
+    body {
+        color: #000;
+        background: #fff;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .section {
+        padding: 2rem 0;
+        page-break-inside: avoid;
+    }
+}
+@media (max-width: 768px) {
+    .hero-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image-slider {
+        margin-bottom: 2rem;
+    }
+}@media (max-width: 768px) {
+    .hero::after {
+        display: none;
+    }
+}
+
