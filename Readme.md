@@ -63,4 +63,4 @@ A premium dark UI with carefully chosen accent colors and proper spacing.
 All text is written in a natural, honest tone — beginner-friendly and learning-focused, not exaggerated or AI-like.
 
 ✅ Clean & Modular Code
-Well-structured, commented code using only HTML, CSS, and Vanilla JavaScript.
+Well-structured, commented code using only HTML, CSS, and Vanilla JavaScript..
