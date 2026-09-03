@@ -45,7 +45,7 @@ React JS
 Backend Architecture
 
 ✅ Dashboard Section
-A mini dashboard featuring animated counters (including follower count animation from 0 to 262) and progress indicators.
+A mini dashboard featuring animated counters (including follower count animation from 0 to 262) and progress indicators..
 
 ✅ Mini Game
 A lightweight reaction-based mini game added for engagement, without affecting performance.
