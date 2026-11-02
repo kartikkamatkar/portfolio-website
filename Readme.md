@@ -26,7 +26,7 @@ An interactive cursor that responds to hover and movement, enhancing the overall
 Subtle parallax effects on text, images, and sections based on mouse movement for a modern feel.
 
 ✅ Hero Image Gallery
-A dynamic hero section with 6–7 images that move slightly with mouse motion to create depth and engagement.
+A dynamic hero section with 6–7 images that move slightly with mouse motion to create depth and engagement..
 
 ✅ Skills Section
 Card-based layout showcasing technical skills with logos and clean descriptions, easy to update in the future.
